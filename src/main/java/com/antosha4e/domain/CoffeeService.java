@@ -7,12 +7,12 @@ public class CoffeeService {
 
     private final static Logger log = LoggerFactory.getLogger(CoffeeService.class);
 
-    public void orderCoffee(String baristaName, String coffeeName) {
+    public void makeCoffee(String baristaName, String coffeeName) {
 
-        log.info("Barista [{}] making a coffee [{}]", baristaName, coffeeName);
+        log.info("Requested coffee [{}] from barista [{}]", coffeeName, baristaName);
 
-        // doing real logic here
+        // do a real coffee magic here
 
-        // ...
+        log.info("Barista [{}] made a coffee [{}]", baristaName, coffeeName);
     }
 }

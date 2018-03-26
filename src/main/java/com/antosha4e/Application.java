@@ -7,6 +7,6 @@ public class Application {
 
         CoffeeService coffeeService = new CoffeeService();
 
-        coffeeService.orderCoffee("name", "latte");
+        coffeeService.makeCoffee("name", "latte");
     }
 }

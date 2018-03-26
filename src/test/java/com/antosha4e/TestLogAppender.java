@@ -43,8 +43,9 @@ public class TestLogAppender extends AbstractAppender {
     }
 
     @Override
-    public void append(LogEvent event) {
-        events.add(event);
+    public void append(final LogEvent event) {
+
+        events.add(event.toImmutable());
     }
 
     public LogEvent getEvent(String loggerName, int index) {
